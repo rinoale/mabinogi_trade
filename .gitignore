@@ -15,3 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+/lib
+/log
+/bin
+/shared
+.byebug_history
