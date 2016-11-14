@@ -120,265 +120,263 @@
 <![endif]-->
 </head>
 
-<body>
-      <!-- row -->
-      <div class="row">
-          <div class="col-sm-8">
+<!-- row -->
+<div class="row">
+    <div class="col-sm-8">
 
-          <!-- row level 2 -->
-              <div class="row">
-                  <div class="col-sm-6">
-                      <!-- Widget Trade -->
-                      <%= render 'layouts/widget/trade' %>
-                      <!--/ Widget Trade -->
+    <!-- row level 2 -->
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Widget Trade -->
+                <%= render 'layouts/widget/trade' %>
+                <!--/ Widget Trade -->
 
-                      <!-- row level 3 -->
-                      <div class="row">
-                          <div class="col-sm-4 col-xs-4">
-                              <!-- Widget Social Buttons -->
-                              <%= render 'layouts/widget/social' %>
-                              <!--/ Widget Social Buttons -->
-                          </div>
+                <!-- row level 3 -->
+                <div class="row">
+                    <div class="col-sm-4 col-xs-4">
+                        <!-- Widget Social Buttons -->
+                        <%= render 'layouts/widget/social' %>
+                        <!--/ Widget Social Buttons -->
+                    </div>
 
-                          <div class="col-sm-8 col-xs-8">
-                              <!-- Widget Weather -->
-                              <%= render 'layouts/widget/weather' %>
-                              <!--/ Widget Weather -->
-                          </div>
-                      </div>
-                      <!--/ row level 3 -->
+                    <div class="col-sm-8 col-xs-8">
+                        <!-- Widget Weather -->
+                        <%= render 'layouts/widget/weather' %>
+                        <!--/ Widget Weather -->
+                    </div>
+                </div>
+                <!--/ row level 3 -->
 
-                      <!-- Widget Audio Player -->
-                      <%= render 'layouts/widget/audio' %>
-                      <!-- Widget Audio Player -->
-                  </div>
+                <!-- Widget Audio Player -->
+                <%= render 'layouts/widget/audio' %>
+                <!-- Widget Audio Player -->
+            </div>
 
-                  <div class="col-sm-6">
-                      <!-- Widget Stats -->
-                      <%= render 'layouts/widget/stats' %>
-                      <!--/ Widget Stats -->
+            <div class="col-sm-6">
+                <!-- Widget Stats -->
+                <%= render 'layouts/widget/stats' %>
+                <!--/ Widget Stats -->
 
-                      <!-- widget calendar-->
-                      <%= render 'layouts/widget/calendar' %>
-                      <!--/ widget calendar-->
+                <!-- widget calendar-->
+                <%= render 'layouts/widget/calendar' %>
+                <!--/ widget calendar-->
 
-                      <!-- Controls -->
-                      <div class="controls boxed line-top">
-                          <div class="inner clearfix">
-                              <div class="input_styled checklist pull-left"><div class="rowCheckbox"><input name="signup" type="checkbox" id="signup" value="signup"><label for="signup"></label></div></div>
-                              <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-red"><input name="signup2" checked type="checkbox" id="signup2" value="signup2"><label for="signup2"></label></div></div>
-                              <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-large checkbox-noText"><input name="signup5" type="checkbox" checked id="signup5" value="signup5"><label for="signup5">ON</label></div></div>
-                              <div class="clear"></div>
-                              <div class="input_styled inlinelist pull-left"><div class="rowRadio"><input type="radio" name="signup3" value="radio_v1" id="radio_v1"><label for="radio_v1"></label></div></div>
-                              <div class="input_styled inlinelist pull-left"><div class="rowRadio radio-red"><input type="radio" name="signup3" value="radio_v2" id="radio_v2" checked><label for="radio_v2"></label></div></div>
-                              <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-large checkbox-noText"><input name="signup6" type="checkbox" id="signup6" value="signup6"><label for="signup6">OFF</label></div></div>
-                          </div>
-                      </div>
-                      <!--/ Controls -->
-                  </div>
-              </div>
-          <!--/ row level 2 -->
-          </div>
+                <!-- Controls -->
+                <div class="controls boxed line-top">
+                    <div class="inner clearfix">
+                        <div class="input_styled checklist pull-left"><div class="rowCheckbox"><input name="signup" type="checkbox" id="signup" value="signup"><label for="signup"></label></div></div>
+                        <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-red"><input name="signup2" checked type="checkbox" id="signup2" value="signup2"><label for="signup2"></label></div></div>
+                        <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-large checkbox-noText"><input name="signup5" type="checkbox" checked id="signup5" value="signup5"><label for="signup5">ON</label></div></div>
+                        <div class="clear"></div>
+                        <div class="input_styled inlinelist pull-left"><div class="rowRadio"><input type="radio" name="signup3" value="radio_v1" id="radio_v1"><label for="radio_v1"></label></div></div>
+                        <div class="input_styled inlinelist pull-left"><div class="rowRadio radio-red"><input type="radio" name="signup3" value="radio_v2" id="radio_v2" checked><label for="radio_v2"></label></div></div>
+                        <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-large checkbox-noText"><input name="signup6" type="checkbox" id="signup6" value="signup6"><label for="signup6">OFF</label></div></div>
+                    </div>
+                </div>
+                <!--/ Controls -->
+            </div>
+        </div>
+    <!--/ row level 2 -->
+    </div>
 
-          <div class="col-sm-4">
-              <!-- Avatar Placeholder -->
-              <%= render 'layouts/widget/avatar' %>
-              <!--/ Avatar Placeholder -->
+    <div class="col-sm-4">
+        <!-- Avatar Placeholder -->
+        <%= render 'layouts/widget/avatar' %>
+        <!--/ Avatar Placeholder -->
 
-              <!-- Video Player -->
-              <div class="video_player boxed">
-                  <div class="inner">
-                      <video id="my_video_1" class="video-js" controls loop
-                             preload="auto" poster="images/temp/vjs_poster2.png"
-                             data-setup="{}">
-                          <source src="http://test.themefuse.com/artiom/galapagos.mp4" type='video/mp4'>
-                      </video>
-                      <script>
-                          _V_("my_video_1").ready(function(){
-                              var myPlayer = this;
-                              var aspectRatio = 267/640;
-                              var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
-                              myPlayer.width(width).height( width * aspectRatio );
+        <!-- Video Player -->
+        <div class="video_player boxed">
+            <div class="inner">
+                <video id="my_video_1" class="video-js" controls loop
+                       preload="auto" poster="images/temp/vjs_poster2.png"
+                       data-setup="{}">
+                    <source src="http://test.themefuse.com/artiom/galapagos.mp4" type='video/mp4'>
+                </video>
+                <script>
+                    _V_("my_video_1").ready(function(){
+                        var myPlayer = this;
+                        var aspectRatio = 267/640;
+                        var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                        myPlayer.width(width).height( width * aspectRatio );
 
-                              function resizeVideoJS(){
-                                  var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
-                                  myPlayer.width(width).height( width * aspectRatio );
-                              }
-                              resizeVideoJS();
-                              window.onresize = resizeVideoJS;
-                          });
-                      </script>
-                  </div>
-              </div>
-              <!--/ Video Player -->
+                        function resizeVideoJS(){
+                            var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                            myPlayer.width(width).height( width * aspectRatio );
+                        }
+                        resizeVideoJS();
+                        window.onresize = resizeVideoJS;
+                    });
+                </script>
+            </div>
+        </div>
+        <!--/ Video Player -->
 
-              <!-- search widget -->
-              <%= render 'layouts/widget/search' %>
-              <!--/ search widget -->
+        <!-- search widget -->
+        <%= render 'layouts/widget/search' %>
+        <!--/ search widget -->
 
-              <!-- User Menu -->
-              <%= render 'layouts/menu/user' %>
-              <!--/ User Menu -->
+        <!-- User Menu -->
+        <%= render 'layouts/menu/user' %>
+        <!--/ User Menu -->
 
-              <!-- row level 2 -->
-              <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-md-6"></div>
-                  <div class="col-xs-6 col-sm-8 col-md-6">
-                      <!-- Ribbons -->
-                      <div class="ribbons boxed">
-                          <div class="ribbon"><span><em>Sale</em><strong>20%</strong></span></div>
-                          <div class="ribbon ribbon-blue"><span><em>Sale</em><strong>50%</strong></span></div>
-                      </div>
-                      <!--/ Ribbons -->
-                  </div>
-              </div>
-              <!--/ row level 2 -->
+        <!-- row level 2 -->
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-6"></div>
+            <div class="col-xs-6 col-sm-8 col-md-6">
+                <!-- Ribbons -->
+                <div class="ribbons boxed">
+                    <div class="ribbon"><span><em>Sale</em><strong>20%</strong></span></div>
+                    <div class="ribbon ribbon-blue"><span><em>Sale</em><strong>50%</strong></span></div>
+                </div>
+                <!--/ Ribbons -->
+            </div>
+        </div>
+        <!--/ row level 2 -->
 
-              <!-- Image Slider -->
-              <%= render 'layouts/widget/gallery' %>
-              <!--/ Image Slider -->
+        <!-- Image Slider -->
+        <%= render 'layouts/widget/gallery' %>
+        <!--/ Image Slider -->
 
-          </div>
-      </div>
-      <!--/ row -->
+    </div>
+</div>
+<!--/ row -->
 
-        <!-- row -->
-      <div class="row">
-          <div class="col-sm-4">
-              <div class="widget-container progressBars boxed">
-                  <h3 class="widget-title">Progress Bars</h3>
-                  <div class="inner">
-                      <!-- Progress Bar -->
-                      <div id="progressBar1" class="progressbar">
-                          <span class="mark-left">0%</span>
-                          <span class="mark-right">100%</span>
-                          <div class="percent"></div>
-                          <div class="pbar"></div>
-                          <div class="elapsed"></div>
-                          <div class="remained"></div>
-                      </div>
-                      <script type="text/javascript">
-                          $(document).ready(function() {
-                              $('#progressBar1').anim_progressbar({
-                                  totaltime: 90
-                              });
-                          });
-                      </script>
-                      <!--/ Progress Bar -->
+  <!-- row -->
+<div class="row">
+    <div class="col-sm-4">
+        <div class="widget-container progressBars boxed">
+            <h3 class="widget-title">Progress Bars</h3>
+            <div class="inner">
+                <!-- Progress Bar -->
+                <div id="progressBar1" class="progressbar">
+                    <span class="mark-left">0%</span>
+                    <span class="mark-right">100%</span>
+                    <div class="percent"></div>
+                    <div class="pbar"></div>
+                    <div class="elapsed"></div>
+                    <div class="remained"></div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('#progressBar1').anim_progressbar({
+                            totaltime: 90
+                        });
+                    });
+                </script>
+                <!--/ Progress Bar -->
 
-                      <!-- Range slider -->
-                      <div class="range-slider styled">
-                          <input id="price_range" type="text" name="price_range" value="120;720">
-                      </div>
-                      <script type="text/javascript" >
-                          jQuery(document).ready(function($) {
-                              // Price Range Input
-                              $("#price_range").rangeslider({
-                                  from: 0,
-                                  to: 1000,
-                                  limits: false,
-                                  scale: ['$0', '$1000'],
-                                  heterogeneity: ['50/300'],
-                                  step: 10,
-                                  smooth: true,
-                                  dimension: '$'
-                              });
-                          });
-                      </script>
-                      <!-- Range slider -->
+                <!-- Range slider -->
+                <div class="range-slider styled">
+                    <input id="price_range" type="text" name="price_range" value="120;720">
+                </div>
+                <script type="text/javascript" >
+                    jQuery(document).ready(function($) {
+                        // Price Range Input
+                        $("#price_range").rangeslider({
+                            from: 0,
+                            to: 1000,
+                            limits: false,
+                            scale: ['$0', '$1000'],
+                            heterogeneity: ['50/300'],
+                            step: 10,
+                            smooth: true,
+                            dimension: '$'
+                        });
+                    });
+                </script>
+                <!-- Range slider -->
 
-                      <!-- Progress Bar with download Bar -->
-                      <div id="progressBar2" class="progressbar style2">
-                          <span class="mark-left">0%</span>
-                          <span class="mark-right">100%</span>
-                          <div class="percent"></div>
-                          <div class="pbar">
-                              <div id="downloadBar" class="downloadbar">
-                                  <div class="pbar"></div>
-                              </div>
-                          </div>
-                          <div class="elapsed"></div>
-                          <div class="remained"></div>
+                <!-- Progress Bar with download Bar -->
+                <div id="progressBar2" class="progressbar style2">
+                    <span class="mark-left">0%</span>
+                    <span class="mark-right">100%</span>
+                    <div class="percent"></div>
+                    <div class="pbar">
+                        <div id="downloadBar" class="downloadbar">
+                            <div class="pbar"></div>
+                        </div>
+                    </div>
+                    <div class="elapsed"></div>
+                    <div class="remained"></div>
 
-                      </div>
-                      <script type="text/javascript">
-                          $(document).ready(function() {
-                              $('#progressBar2').anim_progressbar({
-                                  totaltime: 180
-                              });
-                              $('#downloadBar').anim_progressbar({
-                                  totaltime: 120
-                              });
-                          });
-                      </script>
-                      <!--/ Progress Bar with download Bar -->
-                  </div>
-              </div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('#progressBar2').anim_progressbar({
+                            totaltime: 180
+                        });
+                        $('#downloadBar').anim_progressbar({
+                            totaltime: 120
+                        });
+                    });
+                </script>
+                <!--/ Progress Bar with download Bar -->
+            </div>
+        </div>
 
-              <div class="widget-container scrollBars boxed">
-                  <h3 class="widget-title">Scroll Bars</h3>
-                  <div class="inner clearfix">
-                      <!-- ScrollBars -->
-                      <div class="scrollbar">
-                          <div class="scrollbar-inner">
-                              <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
-                          </div>
-                      </div>
-                      <div class="scrollbar scrollbar-yellow">
-                          <div class="scrollbar-inner">
-                              <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
-                          </div>
-                      </div>
-                      <div class="scrollbar scrollbar-red">
-                          <div class="scrollbar-inner">
-                              <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
-                          </div>
-                      </div>
-                      <div class="scrollbar scrollbar-blue">
-                          <div class="scrollbar-inner">
-                              <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
-                          </div>
-                      </div>
-                      <!--/ ScrollBars -->
-                  </div>
-              </div>
+        <div class="widget-container scrollBars boxed">
+            <h3 class="widget-title">Scroll Bars</h3>
+            <div class="inner clearfix">
+                <!-- ScrollBars -->
+                <div class="scrollbar">
+                    <div class="scrollbar-inner">
+                        <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                    </div>
+                </div>
+                <div class="scrollbar scrollbar-yellow">
+                    <div class="scrollbar-inner">
+                        <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                    </div>
+                </div>
+                <div class="scrollbar scrollbar-red">
+                    <div class="scrollbar-inner">
+                        <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                    </div>
+                </div>
+                <div class="scrollbar scrollbar-blue">
+                    <div class="scrollbar-inner">
+                        <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                    </div>
+                </div>
+                <!--/ ScrollBars -->
+            </div>
+        </div>
 
-          </div>
+    </div>
 
-          <div class="col-sm-8">
-          <!-- Simple Message Field -->
-          <div class="comment-list styled clearfix">
-              <ol>
-                  <li class="comment">
-                      <div class="comment-body boxed">
-                          <div class="comment-arrow"></div>
-                          <div class="comment-avatar">
-                              <div class="avatar"><img src="images/temp/avatar6.png" alt="" /></div>
-                          </div>
-                          <div class="comment-text">
-                              <div class="comment-author clearfix">
-                                  <a href="#" class="link-author">Jude Law</a>
-                              </div>
-                              <div class="comment-entry">
-                                  He made his film debut with a minor part in Back ti the Future Part II (1989). Many desktop publishing packages and web page editors now use Lorem Ipsum.
-                              </div>
-                          </div>
-                          <div class="clear"></div>
-                      </div>
-                  </li>
-              </ol>
-          </div>
-          <!--/ Simple Message Field -->
+    <div class="col-sm-8">
+    <!-- Simple Message Field -->
+    <div class="comment-list styled clearfix">
+        <ol>
+            <li class="comment">
+                <div class="comment-body boxed">
+                    <div class="comment-arrow"></div>
+                    <div class="comment-avatar">
+                        <div class="avatar"><img src="images/temp/avatar6.png" alt="" /></div>
+                    </div>
+                    <div class="comment-text">
+                        <div class="comment-author clearfix">
+                            <a href="#" class="link-author">Jude Law</a>
+                        </div>
+                        <div class="comment-entry">
+                            He made his film debut with a minor part in Back ti the Future Part II (1989). Many desktop publishing packages and web page editors now use Lorem Ipsum.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <!--/ Simple Message Field -->
 
-          <!-- Tabs -->
-          <%= render 'layouts/area/tab' %>
-          <!--/ Tabs -->
+    <!-- Tabs -->
+    <%= render 'layouts/area/tab' %>
+    <!--/ Tabs -->
 
-          <!--pricing box-->
-          <%= render 'layouts/area/pricing_box' %>
-          <!--/pricing box-->
+    <!--pricing box-->
+    <%= render 'layouts/area/pricing_box' %>
+    <!--/pricing box-->
 
-          </div>
-      </div>
-      <!--/ row -->
-</body>
+    </div>
+</div>
+<!--/ row -->
