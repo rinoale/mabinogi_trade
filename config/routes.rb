@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'top#index'
 
+  get 'playground' => 'top#playground'
+
   get 'signup' => 'users#show'
 
   # Example of regular route:
