@@ -7,7 +7,8 @@ Rails.application.routes.draw do
 
   get 'playground' => 'top#playground'
 
-  get 'signup' => 'users#show'
+  get 'join' => 'users#new'
+  post 'join' => 'users#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

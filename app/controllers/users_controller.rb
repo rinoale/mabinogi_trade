@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  def show
-    render 'index'
+  def new
   end
 end
