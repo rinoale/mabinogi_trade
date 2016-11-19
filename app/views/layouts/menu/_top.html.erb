@@ -23,5 +23,11 @@
             </ul>
         </li>
         <li class="menu-level-0"><a href="#"><i class="icon-menu icon-menu4"></i><span>settings</span></a></li>
+
+        <% if current_user %>
+          <%= render 'layouts/menu/profile' %>
+        <% else %>
+          <%= render 'layouts/menu/joinup' %>
+        <% end %>
     </ul>
 </div>
