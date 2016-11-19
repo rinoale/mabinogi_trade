@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get 'join' => 'users#new'
   post 'join' => 'users#create'
 
+  get 'signin' => 'session#new'
+  post 'signin' => 'session#create'
+  get 'signout' => 'session#destroy'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
