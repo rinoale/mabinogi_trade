@@ -9,7 +9,6 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      debugger
       flash.now[:danger] = 'invalid email/password'
       render 'new'
     end
