@@ -14,6 +14,11 @@ Rails.application.routes.draw do
   post 'signin' => 'session#create'
   get 'signout' => 'session#destroy'
 
+  resource :items do
+    collection do
+    end
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
