@@ -1,0 +1,46 @@
+<h1>Add Item!</h1>
+
+<%= form_for @item do |f| %>
+  <% if @item.errors.any? %>
+    <div id='error_explanation'>
+      <h2>
+        <%= pluralize(@item.errors.count, 'error') %> prohibited
+        this item from being saved:
+      </h2>
+      <ul>
+        <% @item.errors.full_messages.each do |msg| %>
+          <li><%= msg %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row field_text">
+    Name: <%= f.text_field :name %>
+  </div>
+  <div class="row field_text">
+    Image: <%= f.text_field :image %>
+  </div>
+  <div class="row field_text">
+    Race: <%= f.password_field :race %>
+  </div>
+  <div class="row field_text">
+    Cloth: <%= f.password_field :cloth %>
+  </div>
+  <div class="row field_text">
+    Gender: <%= f.password_field :gender %>
+  </div>
+  <div class="row field_text">
+    Metalware: <%= f.password_field :metalware_info %>
+  </div>
+  <div class="row field_text">
+    Inchant: <%= f.password_field :inchant_info %>
+  </div>
+  <div class="row field_text">
+    Description: <%= f.password_field :description %>
+  </div>
+
+  <span class="btn btn-blue">
+    <%= f.submit 'Submit' %>
+  </span>
+<% end %>
