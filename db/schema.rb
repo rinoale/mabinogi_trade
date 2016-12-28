@@ -14,32 +14,33 @@
 ActiveRecord::Schema.define(version: 20161216065153) do
 
   create_table "items", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image"
-    t.string   "race"
+    t.string   "name",           limit: 255
+    t.string   "image",          limit: 255
+    t.string   "race",           limit: 255
     t.boolean  "cloth"
-    t.string   "gender"
-    t.string   "metalware_info"
-    t.string   "inchant_info"
-    t.text     "description"
-    t.integer  "user_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "gender",         limit: 255
+    t.string   "metalware_info", limit: 255
+    t.string   "inchant_info",   limit: 255
+    t.text     "description",    limit: 65535
+    t.integer  "user_id",        limit: 4
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
-  add_index "items", ["name"], name: "index_items_on_name", unique: true
-  add_index "items", ["user_id"], name: "index_items_on_user_id"
+  add_index "items", ["name"], name: "index_items_on_name", unique: true, using: :btree
+  add_index "items", ["user_id"], name: "index_items_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "emailid"
-    t.string   "password_digest"
-    t.integer  "account_level"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "username",        limit: 255
+    t.string   "emailid",         limit: 255
+    t.string   "password_digest", limit: 255
+    t.integer  "account_level",   limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
-  add_index "users", ["emailid"], name: "index_users_on_emailid", unique: true
-  add_index "users", ["username"], name: "index_users_on_username", unique: true
+  add_index "users", ["emailid"], name: "index_users_on_emailid", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
+  add_foreign_key "items", "users"
 end
