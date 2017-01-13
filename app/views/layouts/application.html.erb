@@ -12,22 +12,24 @@
   </head>
 
   <body>
-    <!-- Website Menu -->
-    <%= render 'layouts/menu/top' %>
-    <!--/ Website Menu -->
-
     <!-- Side Menu -->
     <%= render 'layouts/menu/side' %>
     <!--/ Side Menu -->
 
-    <div class="container container-wide">
-      <!-- content -->
-      <div class="content " role="main">
-        <%= yield %>
-      </div>
-      <!--/ content -->
-    </div>
-    <!--/ container -->
+    <div id='main'>
+      <!-- Website Menu -->
+      <%= render 'layouts/menu/top' %>
+      <!--/ Website Menu -->
 
+
+      <div class="container container-wide">
+        <!-- content -->
+        <div class="content " role="main">
+          <%= yield %>
+        </div>
+        <!--/ content -->
+      </div>
+      <!--/ container -->
+    </div>
   </body>
 </html>
