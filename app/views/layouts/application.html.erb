@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,8 +12,24 @@
   </head>
 
   <body>
+    <!-- Side Menu -->
+    <%= render 'layouts/menu/side' %>
+    <!--/ Side Menu -->
 
-    <%= yield %>
+    <div id='main'>
+      <!-- Website Menu -->
+      <%= render 'layouts/menu/top' %>
+      <!--/ Website Menu -->
 
+
+      <div class="container container-wide">
+        <!-- content -->
+        <div class="content " role="main">
+          <%= yield %>
+        </div>
+        <!--/ content -->
+      </div>
+      <!--/ container -->
+    </div>
   </body>
 </html>
