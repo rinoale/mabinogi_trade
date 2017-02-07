@@ -1,0 +1,34 @@
+<h1>Join!</h1>
+
+<%= form_for @user, url: 'join' do |f| %>
+  <% if @user.errors.any? %>
+    <div id='error_explanation'>
+      <h2>
+        <%= pluralize(@user.errors.count, 'error') %> prohibited
+        this user from being saved:
+      </h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row field_text">
+    Name: <%= f.text_field :username %>
+  </div>
+  <div class="row field_text">
+    Email: <%= f.text_field :emailid %>
+  </div>
+  <div class="row field_text">
+    Password: <%= f.password_field :password %>
+  </div>
+  <div class="row field_text">
+    Password Confirmation: <%= f.password_field :password_confirmation %>
+  </div>
+
+  <span class="btn btn-blue">
+    <%= f.submit 'Submit' %>
+  </span>
+<% end %>

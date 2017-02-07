@@ -1,1 +1,49 @@
-Hello World!!
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+<% content_for :title, 'Metro Vibes | Index' %>
+
+<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+</head>
+
+<!-- row -->
+<div class="row">
+    <div class="col-sm-8">
+    <!-- row level 2 -->
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Controls -->
+                <div class="controls boxed line-top">
+                    <div class="inner clearfix">
+                      <div class="input_styled checklist pull-left">
+                        <div class="rowCheckbox checkbox-large checkbox-noText">
+                          <input name="signup5" type="checkbox" id="toggleSideMenu" value="signup5">
+                          <label for="toggleSideMenu">ON</label>
+                        </div>
+                      </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <!--/ Controls -->
+                </div>
+            </div>
+        </div>
+    <!--/ row level 2 -->
+    </div>
+</div>
+<!--/ row -->
+<script>
+  $('input#toggleSideMenu').change(function() {
+    if (this.checked) {
+      openNavPush();
+    } else {
+      closeNavPush();
+    }
+  })
+</script>
